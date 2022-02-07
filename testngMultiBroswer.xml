@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test1">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Test.homepageTest"/>
+      <!--<class name="Test.ClientLogin"/>
+      <class name="Test.ClientTest"/>
+      <class name="Test.ViewclientTest"/>
+      <class name="Test.ForgotpasswordTest"/>
+      <class name="Test.DeleteclientTest"/>
+      <class name="Test.EditclientTest"/>--> 
+    </classes>
+    
+    </test> <!-- Test -->
+   <test thread-count="5" name="Test2">
+     <parameter name="browser" value="firefox"/> 
+    <classes>
+    <class name="Test.homepageTest"/>
+      <!--<class name="Test.ClientLogin"/>
+      <class name="Test.ClientTest"/>
+      <class name="Test.ViewclientTest"/>
+      <class name="Test.ForgotpasswordTest"/>
+      <class name="Test.DeleteclientTest"/>
+      <class name="Test.EditclientTest"/>--> 
+    </classes>
+    
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

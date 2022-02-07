@@ -1,0 +1,353 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>28/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 07 00:03:55 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>638 seconds (638542 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test.EditclientTest.editurl()'><b>editurl</b><br>Test class: Test.EditclientTest<br>Test method: TC_0021_Verify edit page url</td>
+<td><div><pre>java.lang.AssertionError: expected [https://erp.buffalocart.com/admin/client/manage_client/535] but found [https://erp.buffalocart.com/admin/client/manage_client/536]
+	at Test.EditclientTest.editurl(EditclientTest.java:25)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace224219987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace224219987'><pre>java.lang.AssertionError: expected [https://erp.buffalocart.com/admin/client/manage_client/535] but found [https://erp.buffalocart.com/admin/client/manage_client/536]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at Test.EditclientTest.editurl(EditclientTest.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>44</td>
+<td>Test.EditclientTest@77a57272</td></tr>
+<tr>
+<td title='Test.ClientTest.mandatoryfield()'><b>mandatoryfield</b><br>Test class: Test.ClientTest<br>Test method: TC_0019_verify Without mandatoryfieldfill</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (1125, 596). Other element would receive the click: &lt;div id=&quot;toast-container&quot; class=&quot;toast-bottom-right&quot; aria-live=&quot;polite&quot; role=&quot;alert&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=98.0.4758.82)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-0J70AHP&apos;, ip: &apos;192.168.100.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [628920453105003c86272e5acaece7ba, clickElement {id=b1e54582-b617-412f-bcb3-e463af3afb7e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51547}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51547/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (628920453105003c86272e5acaece7ba)] -&gt; xpath: //button[@class=&apos;btn btn-sm btn-primary&apos;]]
+Session ID: 628920453105003c86272e5acaece7ba
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at Utility.PageUtility.clickOnElement(PageUtility.java:36)
+	at Page.Clientpage.mandatoryfill(Clientpage.java:106)
+	at Test.ClientTest.mandatoryfield(ClientTest.java:107)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace74606989", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace74606989'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn btn-sm btn-primary&quot;&gt;...&lt;/button&gt; is not clickable at point (1125, 596). Other element would receive the click: &lt;div id=&quot;toast-container&quot; class=&quot;toast-bottom-right&quot; aria-live=&quot;polite&quot; role=&quot;alert&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=98.0.4758.82)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-0J70AHP&apos;, ip: &apos;192.168.100.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [628920453105003c86272e5acaece7ba, clickElement {id=b1e54582-b617-412f-bcb3-e463af3afb7e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:51547}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51547/devtoo..., se:cdpVersion: 98.0.4758.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (628920453105003c86272e5acaece7ba)] -&gt; xpath: //button[@class=&apos;btn btn-sm btn-primary&apos;]]
+Session ID: 628920453105003c86272e5acaece7ba
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy16.click(Unknown Source)
+	at Utility.PageUtility.clickOnElement(PageUtility.java:36)
+	at Page.Clientpage.mandatoryfill(Clientpage.java:106)
+	at Test.ClientTest.mandatoryfield(ClientTest.java:107)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+</pre></div></td>
+<td>2</td>
+<td>Test.ClientTest@276438c9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test.homepageTest.Checkboxsearch()'><b>Checkboxsearch</b><br>Test class: Test.homepageTest<br>Test method: TC_009_Check box search</td>
+<td></td>
+<td>1</td>
+<td>Test.homepageTest@166fa74d</td></tr>
+<tr>
+<td title='Test.ClientLogin.Login()'><b>Login</b><br>Test class: Test.ClientLogin<br>Test method: TC_005_Verify user login with valid user credentials<br>Parameters: admin, 123456</td>
+<td></td>
+<td>116</td>
+<td>Test.ClientLogin@40f08448</td></tr>
+<tr>
+<td title='Test.homepageTest.Login()'><b>Login</b><br>Test class: Test.homepageTest<br>Test method: TC_008_Verify loginpage title</td>
+<td></td>
+<td>32</td>
+<td>Test.homepageTest@166fa74d</td></tr>
+<tr>
+<td title='Test.ViewclientTest.Login()'><b>Login</b><br>Test class: Test.ViewclientTest<br>Test method: TC_0023_Verify view pagetitle</td>
+<td></td>
+<td>33</td>
+<td>Test.ViewclientTest@588df31b</td></tr>
+<tr>
+<td title='Test.ClientLogin.Remembermecheckbox()'><b>Remembermecheckbox</b><br>Test class: Test.ClientLogin<br>Test method: TC_004_Verify whetehr the user is able to click on 'Remember me' checkbox</td>
+<td></td>
+<td>0</td>
+<td>Test.ClientLogin@40f08448</td></tr>
+<tr>
+<td title='Test.ClientLogin.checkpopup()'><b>checkpopup</b><br>Test class: Test.ClientLogin<br>Test method: TC_006_Check popupwindow</td>
+<td></td>
+<td>0</td>
+<td>Test.ClientLogin@40f08448</td></tr>
+<tr>
+<td title='Test.ClientTest.clientclicks()'><b>clientclicks</b><br>Test class: Test.ClientTest<br>Test method: TC_0015_check newclientclick</td>
+<td></td>
+<td>0</td>
+<td>Test.ClientTest@276438c9</td></tr>
+<tr>
+<td title='Test.homepageTest.currenturl()'><b>currenturl</b><br>Test class: Test.homepageTest<br>Test method: TC_0012_Verify currenturl</td>
+<td></td>
+<td>0</td>
+<td>Test.homepageTest@166fa74d</td></tr>
+<tr>
+<td title='Test.DeleteclientTest.deletebutton()'><b>deletebutton</b><br>Test class: Test.DeleteclientTest<br>Test method: TC_002_Verify  user can delete a clientList from table</td>
+<td></td>
+<td>7</td>
+<td>Test.DeleteclientTest@33b37288</td></tr>
+<tr>
+<td title='Test.DeleteclientTest.deleteclients()'><b>deleteclients</b><br>Test class: Test.DeleteclientTest<br>Test method: TC_0020_Verify delete page title</td>
+<td></td>
+<td>97</td>
+<td>Test.DeleteclientTest@33b37288</td></tr>
+<tr>
+<td title='Test.LeadTest.deletedata()'><b>deletedata</b><br>Test class: Test.LeadTest<br>Test method: TC_0030_Verify user can delete</td>
+<td></td>
+<td>1</td>
+<td>Test.LeadTest@6e2c9341</td></tr>
+<tr>
+<td title='Test.LeadTest.editdatae()'><b>editdatae</b><br>Test class: Test.LeadTest<br>Test method: TC_0029_Verify user can edit data</td>
+<td></td>
+<td>9</td>
+<td>Test.LeadTest@6e2c9341</td></tr>
+<tr>
+<td title='Test.EditclientTest.editdatas()'><b>editdatas</b><br>Test class: Test.EditclientTest<br>Test method: TC_0022_Verify user can edit clientdetails</td>
+<td></td>
+<td>5</td>
+<td>Test.EditclientTest@77a57272</td></tr>
+<tr>
+<td title='Test.ForgotpasswordTest.forgotpasswordtest()'><b>forgotpasswordtest</b><br>Test class: Test.ForgotpasswordTest<br>Test method: TC_005_Verify error message displyed on  Reset Password page with invalid email id</td>
+<td></td>
+<td>4</td>
+<td>Test.ForgotpasswordTest@101df177</td></tr>
+<tr>
+<td title='Test.LeadTest.leadpagetitle()'><b>leadpagetitle</b><br>Test class: Test.LeadTest<br>Test method: TC_0027_Verify leadpage title</td>
+<td></td>
+<td>33</td>
+<td>Test.LeadTest@6e2c9341</td></tr>
+<tr>
+<td title='Test.LeadTest.leadpageurl()'><b>leadpageurl</b><br>Test class: Test.LeadTest<br>Test method: TC_0028_Verify leadpage url</td>
+<td></td>
+<td>0</td>
+<td>Test.LeadTest@6e2c9341</td></tr>
+<tr>
+<td title='Test.ClientLogin.loginwithinvalidcredentials()'><b>loginwithinvalidcredentials</b><br>Test class: Test.ClientLogin<br>Test method: TC_003_Verify login with invalid credentials<br>Parameters: admins, 12345678</td>
+<td></td>
+<td>4</td>
+<td>Test.ClientLogin@40f08448</td></tr>
+<tr>
+<td title='Test.ClientTest.newclientdetails()'><b>newclientdetails</b><br>Test class: Test.ClientTest<br>Test method: TC_0016_Verify  user can add new client details<br>Parameters: Ibms, ibms@gmail.com, GB999 9999 73</td>
+<td></td>
+<td>0</td>
+<td>Test.ClientTest@276438c9</td></tr>
+<tr>
+<td title='Test.ClientTest.savebutton()'><b>savebutton</b><br>Test class: Test.ClientTest<br>Test method: TC_0018_verify savebuttonclick</td>
+<td></td>
+<td>3</td>
+<td>Test.ClientTest@276438c9</td></tr>
+<tr>
+<td title='Test.ClientTest.search()'><b>search</b><br>Test class: Test.ClientTest<br>Test method: TC_0013_Verify search box</td>
+<td></td>
+<td>39</td>
+<td>Test.ClientTest@276438c9</td></tr>
+<tr>
+<td title='Test.ClientTest.validsearchbox()'><b>validsearchbox</b><br>Test class: Test.ClientTest<br>Test method: TC_0014_Verify valid value in a search box</td>
+<td></td>
+<td>2</td>
+<td>Test.ClientTest@276438c9</td></tr>
+<tr>
+<td title='Test.homepageTest.verifyDateDisplayedInHomePage()'><b>verifyDateDisplayedInHomePage</b><br>Test class: Test.homepageTest<br>Test method: TC_0010_Verify date displeyed in home page</td>
+<td></td>
+<td>0</td>
+<td>Test.homepageTest@166fa74d</td></tr>
+<tr>
+<td title='Test.ClientLogin.verifyforgotpasswordurl()'><b>verifyforgotpasswordurl</b><br>Test class: Test.ClientLogin<br>Test method: TC_002_Verify forgotpassword url</td>
+<td></td>
+<td>0</td>
+<td>Test.ClientLogin@40f08448</td></tr>
+<tr>
+<td title='Test.ClientLogin.verifyloginpagetitle()'><b>verifyloginpagetitle</b><br>Test class: Test.ClientLogin<br>Test method: TC_001_Verify login page title</td>
+<td></td>
+<td>0</td>
+<td>Test.ClientLogin@40f08448</td></tr>
+<tr>
+<td title='Test.homepageTest.verifylogo()'><b>verifylogo</b><br>Test class: Test.homepageTest<br>Test method: TC_0011_Verify Logo display</td>
+<td></td>
+<td>0</td>
+<td>Test.homepageTest@166fa74d</td></tr>
+<tr>
+<td title='Test.LogoutTest.verifylogo()'><b>verifylogo</b><br>Test class: Test.LogoutTest<br>Test method: TC_0025_Verify logoutpage</td>
+<td></td>
+<td>28</td>
+<td>Test.LogoutTest@46238e3f</td></tr>
+<tr>
+<td title='Test.StockTest.verifystockpage()'><b>verifystockpage</b><br>Test class: Test.StockTest<br>Test method: TC_0026_Verify stocktabs</td>
+<td></td>
+<td>21</td>
+<td>Test.StockTest@7181ae3f</td></tr>
+<tr>
+<td title='Test.ViewclientTest.viewdetails()'><b>viewdetails</b><br>Test class: Test.ViewclientTest<br>Test method: TC_0024_Verify  the details displayed on view client page</td>
+<td></td>
+<td>0</td>
+<td>Test.ViewclientTest@588df31b</td></tr>
+</table><p>
+</body>
+</html>

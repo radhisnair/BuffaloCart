@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="testng">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+     <!--  <class name="Test.ClientLogin"/>-->
+     <!--<class name="Test.ForgotpasswordTest"/>-->
+  <!--  <class name="Test.LogoutTest"/>--> 
+    <!-- <class name="Test.homepageTest"/>-->
+   <!--<class name="Test.ClientTest"/>-->
+   <!--  <class name="Test.DeleteclientTest"/>--> 
+      <!-- <class name="Test.ViewclientTest"/>-->
+    <class name="Test.EditclientTest"/>
+   <!--   <class name="Test.StockTest"/>--> 
+     <!--  <class name="Test.LeadTest"/>--> 
+     
+    
+    </classes>
+  </test> <!-- testng -->
+</suite> <!-- Suite -->

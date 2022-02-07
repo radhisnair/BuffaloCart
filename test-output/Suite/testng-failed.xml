@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.buffalocart.extendreport.TestListener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Test.homepageTest">
+        <methods>
+          <include name="afterclass"/>
+          <include name="testInitialize"/>
+        </methods>
+      </class> <!-- Test.homepageTest -->
+      <class name="Test.DeleteclientTest">
+        <methods>
+          <include name="afterclass"/>
+          <include name="testInitialize"/>
+        </methods>
+      </class> <!-- Test.DeleteclientTest -->
+      <class name="Test.LeadTest">
+        <methods>
+          <include name="afterclass"/>
+          <include name="testInitialize"/>
+        </methods>
+      </class> <!-- Test.LeadTest -->
+      <class name="Test.LogoutTest">
+        <methods>
+          <include name="afterclass"/>
+          <include name="testInitialize"/>
+        </methods>
+      </class> <!-- Test.LogoutTest -->
+      <class name="Test.ViewclientTest">
+        <methods>
+          <include name="afterclass"/>
+          <include name="testInitialize"/>
+        </methods>
+      </class> <!-- Test.ViewclientTest -->
+      <class name="Test.EditclientTest">
+        <methods>
+          <include name="afterclass"/>
+          <include name="editurl"/>
+          <include name="testInitialize"/>
+        </methods>
+      </class> <!-- Test.EditclientTest -->
+      <class name="Test.StockTest">
+        <methods>
+          <include name="afterclass"/>
+          <include name="testInitialize"/>
+        </methods>
+      </class> <!-- Test.StockTest -->
+      <class name="Test.ClientLogin">
+        <methods>
+          <include name="afterclass"/>
+          <include name="testInitialize"/>
+        </methods>
+      </class> <!-- Test.ClientLogin -->
+      <class name="Test.ClientTest">
+        <methods>
+          <include name="afterclass"/>
+          <include name="mandatoryfield"/>
+          <include name="testInitialize"/>
+        </methods>
+      </class> <!-- Test.ClientTest -->
+      <class name="Test.ForgotpasswordTest">
+        <methods>
+          <include name="afterclass"/>
+          <include name="testInitialize"/>
+        </methods>
+      </class> <!-- Test.ForgotpasswordTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
